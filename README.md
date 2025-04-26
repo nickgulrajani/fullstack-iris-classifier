@@ -180,6 +180,8 @@ The trained model is saved as `model.pkl` and served through a full-stack React 
 
 ![Confusion Matrix - Iris Prediction](./confusion_matrix.png)
 
+![umlcomponent](./umlcomponent.png)
+
 ## 🧠 Model Interpretation
 
 The Logistic Regression model trained on the Iris dataset shows outstanding performance based on evaluation metrics.

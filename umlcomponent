@@ -1,0 +1,39 @@
+@startuml
+skinparam componentStyle rectangle
+
+package "ML Training Pipeline" {
+  
+  [Load Iris Dataset] --> [Split into Train/Test Sets]
+  [Split into Train/Test Sets] --> [Train Logistic Regression Model]
+  [Train Logistic Regression Model] --> [Predict on Test Set]
+  
+  [Predict on Test Set] --> [Calculate Accuracy]
+  [Predict on Test Set] --> [Generate Confusion Matrix]
+  
+  [Generate Confusion Matrix] --> [Display Heatmap]
+  [Generate Confusion Matrix] --> [Print Classification Report]
+  
+  [Train Logistic Regression Model] --> [Save Trained Model (model.pkl)]
+  
+}
+
+note bottom of [Load Iris Dataset]
+Load features (X) and labels (y) 
+from sklearn.datasets
+end note
+
+note bottom of [Train Logistic Regression Model]
+Use LogisticRegression(max_iter=200)
+to fit training data
+end note
+
+note bottom of [Predict on Test Set]
+Predict labels on X_test
+end note
+
+note bottom of [Save Trained Model (model.pkl)]
+Model serialized using joblib
+end note
+
+@enduml
+
