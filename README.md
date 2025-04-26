@@ -1,4 +1,9 @@
 # Fullstack Iris Classifier
+## Author
+
+Nicholas Gulrajani  
+[GitHub Profile](https://github.com/nickgulrajani)
+
 
 A full-stack ML application that predicts the species of an Iris flower using user input features.
 
